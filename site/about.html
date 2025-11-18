@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — B.A.S. Counseling Services</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">B.A.S. Counseling Services</div>
+    <span class="mobile-menu-btn" onclick="toggleMenu()">&#9776;</span>
+    <nav class="desktop-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="faith.html">Faith</a>
+      <a href="telehealth.html">Telehealth</a>
+      <a href="contact.html">Book</a>
+    </nav>
+    <div id="mobileNav" class="mobile-nav" aria-hidden="true">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="faith.html">Faith</a>
+      <a href="telehealth.html">Telehealth</a>
+      <a href="contact.html">Book</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <h1>Meet Your Counselor</h1>
+      <p>I am currently completing my MSc in Clinical Mental Health Counseling and draw from human-centered, ethically grounded, and spiritually-sensitive training. My approach blends warmth, reflection, and a collaborative therapeutic partnership.</p>
+
+      <h2>Core Values</h2>
+      <ul>
+        <li>Collaborative care — you're the expert on your life</li>
+        <li>Evidence-informed practices</li>
+        <li>Faith-informed options available</li>
+        <li>Respect for confidentiality and boundaries</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 B.A.S. Counseling Services</p>
+  </footer>
+
+  <script>
+    function toggleMenu(){
+      const nav = document.getElementById('mobileNav');
+      nav.classList.toggle('open');
+      nav.setAttribute('aria-hidden', !nav.classList.contains('open'));
+    }
+  </script>
+</body>
+</html>
