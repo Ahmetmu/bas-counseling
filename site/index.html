@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>B.A.S. Counseling Services</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">B.A.S. Counseling Services</div>
+    <span class="mobile-menu-btn" onclick="toggleMenu()">&#9776;</span>
+
+    <nav class="desktop-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="faith.html">Faith</a>
+      <a href="telehealth.html">Telehealth</a>
+      <a href="contact.html">Book</a>
+    </nav>
+
+    <div id="mobileNav" class="mobile-nav" aria-hidden="true">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="faith.html">Faith</a>
+      <a href="telehealth.html">Telehealth</a>
+      <a href="contact.html">Book</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Empowering your journey toward growth, healing, and excellence.</h1>
+      <p class="lead">Warm, professional counseling for adults across Central PA. Trauma, substance concerns, autism support, depression &amp; anxiety. Hybrid care available.</p>
+      <a class="cta-btn" href="contact.html">Book a Consultation</a>
+    </section>
+
+    <section id="services-preview" class="section">
+      <h2>Specialized Services</h2>
+
+      <div class="service-grid">
+        <article class="service-card">
+          <h3>Trauma Counseling</h3>
+          <p>Support for individuals healing from complex or chronic trauma. We take a collaborative, paced approach to recovery.</p>
+        </article>
+
+        <article class="service-card">
+          <h3>Drug & Alcohol</h3>
+          <p>Nonjudgmental, evidence-informed support for substance-related concerns and relapse prevention planning.</p>
+        </article>
+
+        <article class="service-card">
+          <h3>Autism Support (Adults)</h3>
+          <p>Focus on social communication, sensory regulation, and identity — counseling tailored to adult experiences on the spectrum.</p>
+        </article>
+
+        <article class="service-card">
+          <h3>Depression &amp; Anxiety</h3>
+          <p>Practical skills, mood regulation tools, and a strengths-based approach to improve daily functioning and resilience.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 B.A.S. Counseling Services — Central Pennsylvania</p>
+  </footer>
+
+  <script>
+    function toggleMenu(){
+      const nav = document.getElementById('mobileNav');
+      nav.classList.toggle('open');
+      // accessibility toggle
+      const isOpen = nav.classList.contains('open');
+      nav.setAttribute('aria-hidden', !isOpen);
+    }
+  </script>
+</body>
+</html>
